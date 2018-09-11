@@ -1,0 +1,1 @@
+<?	header("Location: adm_user.php?usertype=client");?>
