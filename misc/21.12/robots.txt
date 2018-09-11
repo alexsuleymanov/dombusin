@@ -1,0 +1,26 @@
+User-Agent: *
+Disallow: /cgi_bin/
+Disallow: /admin/
+Disallow: /tpl/
+Disallow: /search
+Disallow: /fckeditor/
+Disallow: /login
+Disallow: /register
+Disallow: /cart
+Disallow: /user
+Disallow: *?*
+Allow: /app/view/css
+Sitemap: http://www.dombusin.com/sitemap.xml
+
+User-Agent: Yandex
+Disallow: /cgi_bin/
+Disallow: /admin/
+Disallow: /tpl/
+Disallow: /search
+Disallow: /fckeditor/
+Disallow: /login
+Disallow: /register
+Disallow: /user
+Disallow: /cart
+Allow: /app/view/css
+Host: www.dombusin.com

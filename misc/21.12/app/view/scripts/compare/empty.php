@@ -1,0 +1,1 @@
+<?	echo $this->labels["no_prods_to_compare"];

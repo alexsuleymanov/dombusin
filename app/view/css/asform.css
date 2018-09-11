@@ -1,0 +1,160 @@
+/*.asform{
+	font-family: Arial;
+	font-size: 12px;
+	color: #333333;
+}*/
+
+.asform div.row{
+	width: 100%;
+	padding: 5px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+	clear: both;
+}
+
+.asform div.row dd{
+	float: left;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+.asform div.row dt{
+/*	font-family: Arial;
+	font-size: 12px;*/
+	font-weight: normal;
+	float: left;
+	width: 150px;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+.asform label {
+	font-weight: normal;
+}
+
+#asform_contactform {
+	border: 1px solid #ccc;
+	padding: 15px;
+}
+#asform_contactform dl {
+	width: 92%;
+	margin: 0 auto;
+}
+#asform_contactform input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+}
+/*.asform div.row dt label{
+	font-family: Arial;
+	font-size: 12px;
+	color: #333333;
+	padding-left: 15px;
+	margin: 0px;
+}*/
+
+.asform fieldset{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.asform .zend_form {
+
+}
+.asform fieldset legend{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 22px;
+	color: #000;
+	text-align: center;
+	border-bottom: none;
+}
+
+.asform .hint{
+	font-family: Arial;
+	font-size: 11px;
+	color: #999999;
+	padding-bottom: 10px;
+}
+
+.asform .errors{
+	color: #ff0000;
+}
+
+.asform .required{
+	padding-left: 10px;
+	background: transparent url('/app/view/img/required.gif') no-repeat center left;
+}
+
+.asform input{
+	font-family: Arial;
+	font-size: 12px;
+}
+
+
+#registration_form .asform div.row{
+	width: 100%;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+	clear: both;
+}
+
+#registration_form .asform div.row dd{
+	float: left;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+#registration_form .asform div.row dt{
+	font-family: Arial;
+	font-size: 12px;
+	float: left;
+	width: 150px;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+#registration_form .asform div.row dt label{
+	font-family: Arial;
+	font-size: 12px;
+	color: #333333;
+	padding-left: 15px;
+	margin: 0px;
+}
+
+#registration_form .asform fieldset{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+#registration_form .asform fieldset legend{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 22px;
+	color: #99008e;
+}
+
+#registration_form .asform .hint{
+	font-family: Arial;
+	font-size: 11px;
+	color: #999999;
+	padding-left: 220px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+
+#registration_form .asform .errors{
+	color: #ff0000;
+}
+
+#registration_form .asform .required{
+	padding-left: 10px;
+	background: transparent url('/app/view/img/required.gif') no-repeat center left;
+}
+
+#registration_form .asform input{
+	font-family: Arial;
+	font-size: 12px;
+}

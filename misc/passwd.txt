@@ -1,0 +1,17 @@
+https://185.105.226.85:1500/manager/ispmgr
+login: root
+pass: W9kX3tMsm2hpV4N9
+
+VPS hvosting.ua    
+vps-id:  vps047.hvosting.ua
+vps-ip:  91.200.43.247
+root password: 2sYRu2NekO22Lqfj
+
+ssh-login: adm_vps047
+ssh-password: mUgklibbJf1uCD0K
+linux-image: ubuntu-16.04-x86_64 
+Для доступа к файлам сайтов через фтп:
+логин: dombusin
+пароль: G9zLfXgWFF
+
+вход в phpmyadmin: http://vps047.hvosting.ua/phpmyadmin/

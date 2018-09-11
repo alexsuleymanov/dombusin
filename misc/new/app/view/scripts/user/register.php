@@ -1,0 +1,2 @@
+<?=$this->page->cont?>
+<?=$this->form?>

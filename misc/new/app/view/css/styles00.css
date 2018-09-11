@@ -1,0 +1,335 @@
+.aslideshow {
+    padding:0;
+    border:0;
+    position:relative;
+    display:none;
+    z-index:1;
+}
+
+.aslideshow-content {
+    padding:0;
+    color:#333;
+    overflow:hidden;
+    position:relative;
+    z-index:1;
+}
+
+    /* Some Content Changes */
+    .aslideshow-content p {
+        padding:0 !important;
+        overflow:auto;
+    }
+
+    .aslideshow-content img {
+        padding:0 !important;
+        border:0 !important;
+    }
+
+    .aslideshow-slide {
+        display:none;
+        position:absolute;
+    }
+
+.aslideshow-label-place {
+    padding:0;
+    position:absolute;
+    top:4px;
+    right:6px;
+    z-index:100;
+    height:30px;
+    width:60% !important;
+}
+
+.aslideshow-label {
+        z-index:101;
+        color:#fff;
+        width:100%;
+        height:100%;
+        line-height:30px;
+        text-indent:8px;
+        font-weight:bold;
+
+	    border:#888 solid 1px;
+	    border-radius: 6px;
+	    -moz-border-radius: 6px;
+	    -khtml-border-radius: 6px;
+	    -webkit-border-radius: 6px
+    }
+
+.aslideshow-label a,
+.aslideshow-label a:hover,
+.aslideshow-label a:active,
+.aslideshow-label a:visited {
+color:#fff;
+}
+
+.aslideshow-panel-place {
+    padding:0;
+    position:absolute;
+    bottom:4px;
+    left:6px;
+	width:60% !important;
+    z-index:100;
+    height:34px;
+}
+    .aslideshow-panel {
+        z-index:101;
+        width:100%;
+        height:100%;
+		padding:0 2px;
+	    border:#888 solid 1px;
+	    border-radius: 6px;
+	    -moz-border-radius: 6px;
+	    -khtml-border-radius: 6px;
+	    -webkit-border-radius: 6px
+    }
+
+        .aslideshow-panel a.button {
+            display: block;
+            width:30px;
+            height:32px;
+            float:left;
+            text-indent:-99999%;
+            overflow:hidden;
+            outline: 0; /* @ Firefox, prevent dotted border after click */
+            /*background-image:url(http://www.dombusin.com/ext/noobslide/images/buttons.png);*/
+            background-repeat:no-repeat;
+            border:1px solid transparent
+        }
+
+            .aslideshow-panel a.button:hover {
+                background-color:#333;
+            }
+
+
+            .aslideshow-panel a.first {
+                background-position: 0 0
+            }
+
+            .aslideshow-panel a.prev {
+                background-position: -30px 0
+            }
+
+            .aslideshow-panel a.play {
+                background-position: -60px 0
+            }
+
+            .aslideshow-panel a.stop {
+                background-position: -90px 0
+            }
+
+            .aslideshow-panel a.next {
+                background-position: -120px 0
+            }
+
+            .aslideshow-panel a.last {
+                background-position: -150px 0
+            }
+
+            .aslideshow-panel a.help {
+                position:relative;
+                background-position: -180px 0
+            }
+
+            .aslideshow-panel span.counter {
+                float:right;
+                display: block;
+                font-weight:700;
+                color:#fff;
+                /*width:26px;*/
+                height:32px;
+                line-height:32px;
+                padding:0 8px;
+            }
+
+
+.aslideshow-help {
+    position:absolute;
+    bottom:32px;
+    z-index:101;
+    background-color:#ff9;
+    display:none;
+	padding:2px;
+	margin:0 2px;
+    opacity: 0.8;
+    width:98%;
+}
+
+.aslideshow-frame div {
+    position:absolute;
+    top:0px;
+    left:0px;
+    /*background:url(http://www.dombusin.com/ext/noobslide/images/play.png) 50% 50% no-repeat;*/
+    z-index:201;
+    cursor:pointer;
+    width:100%;
+    height:100%;
+}
+
+.aslideshow-load {
+    display:none;
+}
+    .aslideshow-load div {
+        position:absolute;
+        top:0px;
+        left:0px;
+        /*background:url(http://www.dombusin.com/ext/noobslide/images/ajax-loader.gif) 50% 50% no-repeat;*/
+        z-index:201;
+        cursor:pointer;
+        width:100%;
+        height:100%;
+    }
+
+.aslideshow-shadow {
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:200;
+    width:100%;
+    height:100%;
+}
+
+.aslideshow-opacity {
+    background:url(data:image/png;base64\,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYmBgaAAIMAAAjwCD5Hc2/AAAAABJRU5ErkJggg==);
+    background:rgba(0, 0, 0, 0.5);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#85000000, endColorstr=#85000000);
+}
+
+.pagecont{
+	padding: 10px;
+}
+
+.pagecont p{
+	margin: 10px 0px 10px 0px;
+}
+
+.pagecont ul li{
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 25px;
+}
+
+.comment_register_login{
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 6px;
+}
+
+.comment_register_login a{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	padding-bottom: 6px;
+}
+
+.commentform td{
+	padding: 5px;
+}
+
+.wrap-container {
+  width: 700px;
+  margin: 0px auto;
+  min-height: 200px;
+  height: auto;
+}
+
+.content.reviews {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+  float: none;
+  margin: auto;
+}
+
+.wrap-reviews {
+  padding-bottom: 20px;
+}
+
+.rev-text{
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.reviews .pagination-list{
+	float: none;
+	margin-bottom: 20px;
+}
+
+.reviews-block{
+	margin-bottom: 35px;
+}
+
+.icon-reviews{
+	background: url(../img/icon-reviews.png) no-repeat;
+	display: block;
+	height: 22px;
+	width: 22px;
+	float: left;
+	margin-right: 10px;
+}
+
+.wrap-info{
+	display: block;
+}
+
+.reviews-block .head-title,
+.reviews-block .date{
+	font-family: Tahoma;
+	color: #ff2a93;
+	font-size: 13px;
+	float: left;
+	font-weight: bold;
+	line-height: 19px;
+}
+
+.reviews-block .date{
+	color: #626262;
+}
+
+.reviews-text{
+	margin-top: 15px;
+	display: block;
+	line-height: 16px;
+}
+
+.reviews-text .name, .reviews-text .text{
+	display: inline-block;
+	color: #787878;
+	font-family: Tahoma;
+	font-size:14px;
+
+}
+
+.reviews-text .text{
+	display: inline;	
+}
+
+.reviews-text .name{
+	font-weight: bold;
+}
+
+form.reviews{
+	display: block;
+	width: 737px;
+	border-top: 1px solid #e5e5e5;
+	padding-top: 25px;
+}
+
+.reviews .big-title{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #303030;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.reviews .big-title a{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #ff2a93;
+	margin-bottom: 20px;
+}

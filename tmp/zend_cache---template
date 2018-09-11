@@ -1,0 +1,306 @@
+a:12:{s:14:"cat_page_descr";s:74:"Страница {page} – {name} – Дом Бусин Изюминка ";s:14:"cat_page_title";s:32:"Страница {page} - {name}";s:9:"cat_title";s:0:"";s:10:"prod_title";s:0:"";s:29:"order_status_message_template";s:1850:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+            <td width="230" align="right"><br />
+            <p style="font-family: Arial; font-size: 18px; font-weight: normal;">Номер заказа: {order_id}</p>
+            <hr style="border: 0px; height:0px; border-top: 1px solid #999999;" />
+            <p>&nbsp;</p>
+            <p style="font-family: Arial; font-size: 12px;">Заказ оформлен: {order_time}</p>
+            <div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; font-family: Arial; font-size: 12px;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Заказ</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">
+            <p>Номер заказа:&nbsp;{order_id}</p>
+            <p>Статус заказа: {order_status}</p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:11px; color: #666666;">  Dombusin<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['email']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";s:24:"distrib_message_template";s:688:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+        </tr>
+    </tbody>
+</table>
+<hr />
+<p>{message}</p>
+<p>{prods}</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:11px; color: #666666;">  {$sett['sitename']}<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['email']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";s:10:"image_left";s:51:"<img src="/view/img/tr.gif" align="left"> Some text";s:22:"order_message_template";s:3384:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+            <td width="230" align="right"><br />
+            <p style="font-family: Arial; font-size: 18px; font-weight: normal;">Номер заказа: {order_id}</p>
+            <hr style="border: 0px; height:0px; border-top: 1px solid #999999;" />
+            <p>&nbsp;</p>
+            <p style="font-family: Arial; font-size: 12px;">Заказ оформлен: {order_time}</p>
+            <div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; font-family: Arial; font-size: 12px;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Заказчик</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">{client}</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; font-family: Arial; font-size: 12px;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Содержание заказа</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">{order}</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Оплата</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc; font-family: Arial; font-size: 12px;">{payment}</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Доставка</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc; font-family: Arial; font-size: 12px;">{delivery}</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:11px; color: #666666;">  {$sett['sitename']}<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['email']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";s:23:"remind_message_template";s:2365:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+            <td width="230" align="right"><br />
+            <p style="font-family: Arial; font-size: 18px; font-weight: normal;">Восстановление пароля</p>
+            <hr style="border: 0px; height:0px; border-top: 1px solid #999999;" />
+            <p>&nbsp;</p>
+            <div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-family: Arial; font-size: 12px;">Спасибо, что воспользовались автоматической системой восстановления пароля на нашем сайте!</span><br />
+<br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; font-family: Arial; font-size: 12px;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Ваши регистрационные данные</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td width="100">E-mail</td>
+                        <td><b>{email}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Пароль</td>
+                        <td><b>{pass}</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:11px; color: #666666;">  {$sett['sitename']}<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['stuffemail']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";s:25:"register_message_template";s:3528:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+            <td width="230" align="right"><br />
+            <p style="font-family: Arial; font-size: 18px; font-weight: normal;">Регистрация на сайте</p>
+            <hr style="border: 0px; height:0px; border-top: 1px solid #999999;" />
+            <p>&nbsp;</p>
+            <div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-family: Arial; font-size: 12px;">Спасибо, что зарегистрировались на нашем сайте!</span><br />
+<br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Регистрационные данные</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-family: Arial; font-size: 12px;">
+                <tbody>
+                    <tr>
+                        <td width="100">Логин</td>
+                        <td><b>{login}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Пароль</td>
+                        <td><b>{pass}</b></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Имя</td>
+                        <td><b>{name}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Фамилия</td>
+                        <td><b>{surname}</b></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail</td>
+                        <td><b>{email}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Телефон</td>
+                        <td><b>{phone}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Город</td>
+                        <td><b>{city}</b></td>
+                    </tr>
+                    <tr>
+                        <td>Адрес</td>
+                        <td><b>{address}</b></td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="font-family: Arial; font-size: 12px;">О дополнительных возможностях Вы можете узнать в личном кабинете пользователя после авторизации на сайте</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:11px; color: #666666;">  {$sett['sitename']}<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['stuffemail']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";s:21:"auto_message_template";s:1931:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+            <td width="230" align="right"><br />
+            <p style="font-family: Arial; font-size: 18px; font-weight: normal;">Обратная связь</p>
+            <hr style="border: 0px; height:0px; border-top: 1px solid #999999;" />
+            <p>&nbsp;</p>
+            <div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-family: Arial; font-size: 12px;">Спасибо, что воспользовались формой обратной связи на нашем сайте! Ваше сообщение отправлено администратору и Вы получите ответ в течение 24 часов.</span><br />
+<br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Ваше сообщение</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">{message}</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:12px; color: #666666;">  {$sett['sitename']}<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['stuffemail']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";s:24:"contact_message_template";s:1773:"<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td><img src="http://www.dombusin.com/app/view/img/logo2.jpg" width="200" alt="" /></td>
+            <td width="230" align="right"><br />
+            <p style="font-family: Arial; font-size: 18px; font-weight: normal;">Обратная связь</p>
+            <hr style="border: 0px; height:0px; border-top: 1px solid #999999;" />
+            <p>&nbsp;</p>
+            <div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p><span style="font-family: Arial; font-size: 12px;">Пользователь прислал Вам письмо через форму обратной связи.</span><br />
+<br />
+&nbsp;</p>
+<table border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse;" width="100%">
+    <tbody>
+        <tr>
+            <td style="padding: 5px; border: 1px solid #cccccc; background-color: #aaaaaa; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;">Ваше сообщение</td>
+        </tr>
+        <tr>
+            <td style="padding: 10px; border: 1px solid #cccccc;">{message}</td>
+        </tr>
+    </tbody>
+</table>
+<p><br />
+&nbsp;</p>
+<div style="background-color: #2c4a77; font-size:1px; width: 50px; height: 3px;">&nbsp;</div>
+<p><span style=" font-family:'Arial'; font-size:12px; color: #666666;">   {$sett['sitename']}<br />
+<a href="http://dombusin.com">http://dombusin.com</a><br />
+тел. {$sett['phone']}<br />
+e-mail: {$sett['stuffemail']}</span></p>
+<p align="right" style=" font-family:Arial; font-size: 11px; color: #333333;">&nbsp;</p>";}

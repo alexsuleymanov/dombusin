@@ -1,0 +1,77 @@
+<?	$k = 0;?>
+<?	if ($this->prodone->skidka) { // На товар есть акция. Никаких других скидок на него быть не может?>
+    <?		for($i = 1; $i <=3; $i++){
+        $num_var = ($i == 1) ? 'num' : 'num'.$i;
+        $price_var = ($i == 1) ? 'price' : 'price'.$i;
+        $inpack_var = ($i == 1) ? 'inpack' : 'inpack'.$i;
+
+        if($this->prodone->$num_var){?>
+            <span class="prodvar prodvar<?=$i?> <?=$this->prodone->id?>prodvar <?=$this->prodone->id?>prodvar<?=$i?>">
+				<span style="display:block;width:175px; font-size: 14px;">
+					<font style="text-decoration: line-through; font-size: 14px;"><?= Func::fmtmoney($this->prodone->$price_var) ?>&nbsp;<?= $this->valuta['name'] ?> / <?= $this->prodone->$inpack_var ?></font>
+				</span>
+				<span style="display:block;width:175px; font-size: 14px;">
+					<span style="color:red; font-weight: bold; font-size: 14px;"><?= Func::fmtmoney($this->prodone->$price_var * (100 - $this->prodone->skidka) / 100) ?>&nbsp;<?= $this->valuta['name'] ?></span> / <?= $this->prodone->$inpack_var ?>&nbsp;
+				</span>
+			</span>
+        <?			}?>
+    <?		}?>
+
+
+<?	}elseif($this->prodone->numdiscount || $this->prodone->numdiscount2 || $this->prodone->numdiscount3){ // Есть скидка от количества упаковок. Будет несколько цен. Каждая уже со скидкой постоянного клиента, если она у него есть. Учитываем только $userdiscount?>
+    <?		for($i = 1; $i <=3; $i++){
+        $num_var = ($i == 1) ? 'num' : 'num'.$i;
+        $price_var = ($i == 1) ? 'price' : 'price'.$i;
+        $inpack_var = ($i == 1) ? 'inpack' : 'inpack'.$i;
+        $numdiscount_var = ($i == 1) ? 'numdiscount' : 'numdiscount'.$i;
+        if($this->prodone->$num_var){?>
+            <span class="prodvar prodvar<?=$i?> <?=$this->prodone->id?>prodvar <?=$this->prodone->id?>prodvar<?=$i?>">
+				<?//print_r(AS_Skidka::skidka_decode($this->prodone->$numdiscount_var));?>
+                <?
+                $nd = 0;
+                foreach(AS_Skidka::skidka_decode($this->prodone->$numdiscount_var) as $k => $n){?>
+                    <?if($nd++==0) {$maxprice = Func::fmtmoney($this->prodone->$price_var * (100 - ($_COOKIE['userdiscount'] + $n['skidka'])) / 100);}?>
+                    <span style="display:block;width:175px; font-size: 14px;" class="numdiscount">
+					<span class="ndiscount"><?=$n['min']?><?=($n['max'] == MAX_VALUE) ? '+' : '-'.$n['max']?>:</span>
+					<span style="color:red; font-weight: bold; font-size: 14px;">
+					<?= Func::fmtmoney($this->prodone->$price_var * (100 - ($_COOKIE['userdiscount'] + $n['skidka'])) / 100) ?>&nbsp;<?= $this->valuta['name'] ?>
+					</span>
+                        <?/* / <?= $this->prodone->$inpack_var ?>&nbsp;*/?>
+				</span>
+                <?				}?>
+                <?$minprice = Func::fmtmoney($this->prodone->$price_var * (100 - ($_COOKIE['userdiscount'] + $n['skidka'])) / 100);?>
+                <span style="color:red; font-weight: bold; font-size: 14px;" class="pricediscount"><?=$minprice?> - <?=$maxprice?> <?= $this->valuta['name'] ?></span>
+			</span>
+
+        <?			}
+    }?>
+
+
+<?	}elseif ($_COOKIE['userdiscount'] && !$_COOKIE['useropt']) { // У клиента есть накопительная скидка и он не оптовик. Проверка на всякий случай, он автоматически не оптовик?>
+    <?		for($i = 1; $i <=3; $i++){
+        $num_var = ($i == 1) ? 'num' : 'num'.$i;
+        $price_var = ($i == 1) ? 'price' : 'price'.$i;
+        $inpack_var = ($i == 1) ? 'inpack' : 'inpack'.$i;
+
+        if($this->prodone->$num_var){?>
+            <span class="prodvar prodvar<?=$i?> <?=$this->prodone->id?>prodvar <?=$this->prodone->id?>prodvar<?=$i?>">
+				<span style="display:block;padding-left:10px;width:175px; font-size: 14px;"><s><?= Func::fmtmoney($this->prodone->$price_var) ?>&nbsp;<?= $this->valuta['name'] ?> / <?= $this->prodone->$inpack_var ?>&nbsp;</s></span>
+				<span style="display: block;padding-left:10px;width:175px; font-size: 14px;"><span style="color:red; font-weight: bold; font-size: 14px;"><?= Func::fmtmoney($this->prodone->$price_var * (100 - $_COOKIE['userdiscount']) / 100) ?>&nbsp;<?= $this->valuta['name'] ?></span> / <?= $this->prodone->$inpack_var ?>&nbsp;</span><br />
+			</span>
+        <?			}?>
+    <?		}?>
+
+
+<?	} else { // Нет никаких скидок?>
+    <?		for($i = 1; $i <=3; $i++){
+        $num_var = ($i == 1) ? 'num' : 'num'.$i;
+        $price_var = ($i == 1) ? 'price' : 'price'.$i;
+        $inpack_var = ($i == 1) ? 'inpack' : 'inpack'.$i;
+
+        if($this->prodone->$num_var){?>
+            <span class="prodvar prodvar<?=$i?> <?=$this->prodone->id?>prodvar <?=$this->prodone->id?>prodvar<?=$i?>">
+				<span style="display:block;width:175px; font-size: 14px;"><?= Func::fmtmoney($this->prodone->$price_var) ?>&nbsp;<?= $this->valuta['name'] ?> / <?= $this->prodone->$inpack_var ?>&nbsp;</span>
+			</span>
+        <?			}?>
+    <?		}?>
+<?	}?>

@@ -1,0 +1,195 @@
+#prods {
+	margin: -20px 0 0 70px;
+}
+#amount {
+	margin: 0 0 0 70px;
+}
+#fancybox-wrap {
+	margin-left: 150px !important;
+}
+.button_buy {
+	background: url(../img/buy.png) no-repeat top left;
+	height: 26px;
+	width: 51px;
+	border: none;
+	color: #fff;
+	padding: 0 30px 0 10px;
+	font-size: 12px;
+	cursor: pointer;
+	margin: 0 0 0 0px;
+}
+.bb2 {
+	padding: 0 20px 0 23px;
+	margin: 0 0 0 10px;
+}
+.bb3 {
+	padding: 0 0px 0 0px;
+	margin: 0 0 0 0px;
+	text-align: left;
+}
+
+.button_remove {
+	background: url(../img/remove.png) no-repeat top left;
+	width: 87px;
+	height: 22px;
+	border: none;
+	color: #fff;
+	padding: 0 0 0 15px;
+	font-size: 12px;
+	cursor: pointer;
+}
+.center2 {
+	padding: 0 40px 20px;
+}
+strong, b {
+	font-size: inherit;
+	font-style: inherit;
+	font-weight: bold;
+}
+.ycart {
+	border: 1px solid #ebebeb;
+	width: 906px;
+	padding: 7px;
+}
+.xcart {
+
+}
+.xcart td {
+	color: #030303;
+	font-family: Tahoma;
+	font-size: 12px;
+	padding: 8px;
+}
+.ce1 {
+	background-color: #f2f2f2;
+}
+.ce0 {
+	background-color: #fff;
+}
+.ce1 td {
+	border: 1px solid #fff;
+}
+.ce0 td {
+	border: 1px solid #f2f2f2;
+}
+.ce1 input, .ce0 input {
+	background: none;
+	border: 1px solid #a6a6a8;
+	width: 42px;
+	height: 19px;
+	padding: 0 2px;
+}
+td.cep {
+	color: #f80000;
+	font-weight: bold;
+}
+td.cet {
+	font-weight: bold;
+}
+.cet1 {
+	float: left;
+	width: 175px;
+	font-weight: normal;
+	margin: 8px 0;
+}
+.cet2 {
+	float: left;
+	width: 175px;
+	font-weight: normal;
+	margin: 8px 0;
+}
+.cet3 {
+	float: left;
+	width: 150px;
+	font-weight: normal;
+	margin: 8px 0;
+}
+.ce5 {
+	float: left;
+}
+.ce6 {
+	float: right;
+}
+.ce7 {
+	width: 374px;
+	float: right;
+}
+.ce8 td {
+	font-size: 18px;
+	font-weight: bold;
+}
+.ce7 td {
+	padding: 3px 0;
+}
+p.left-atab {
+	display: block;
+	float: left;
+	cursor: pointer;
+	height: 25px;
+	padding: 7px 0 0 0;
+	margin: 0;
+	width: 100px;
+}
+p.left-atab-2 {
+	color: #000;
+	background: #f2f2f2;
+}
+#left-tab-1 {
+	display: none;
+}
+#left-tab-0 #left-tab-1 {
+	display: block;
+}
+#left-tab-0  p.left-atab {
+	width: 200px;
+}
+td.char div.cchar {
+	max-height: 126px;
+	overflow-y: auto;
+	width: 180px;
+}
+#extsearch-do {
+}
+.ct {
+	float: left;
+	padding: 4px 10px 4px;
+	margin: 0 0 0 1px;
+	color: #990066;
+	background: #f2b3d9;
+	font-weight: bold;
+	cursor: pointer;
+}
+.ct-2 {
+	background: #f2f2f2;
+	color: #000;
+	margin: 0 0 0 1px;
+}
+.ct-2 a {
+	color: #990066;
+	font-weight: bold;
+}
+a.awl {
+	color: #7f99cc;
+}
+#ect-1 {
+
+}
+#ect-2 {
+	display: none;
+}
+#cart_tabs {
+	padding: 0 0 0 8px;
+}
+div.list-price {
+	float: left;
+	width: 175px;
+}
+div.list-name {
+	float: left;
+	width: 475px;
+}
+div.pl-empty {
+	padding: 20px 5px;
+	font-weight: bold;
+}
+

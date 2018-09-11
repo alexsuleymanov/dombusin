@@ -1,0 +1,1 @@
+<?=$this->vacancy->cont?>

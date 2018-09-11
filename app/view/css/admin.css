@@ -1,0 +1,82 @@
+body {
+	background-color:#ffffff;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 11px;
+	padding: 0;
+	margin: 0;
+}
+
+td{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+a:link, a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: none;
+/*	font-weight: bold;*/
+	color: #206080;
+}
+
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration: underline;
+/*	font-weight: bold;*/
+	color: #2060ff;
+}
+
+table.show {
+	border-collapse: collapse;
+	border-spacing: 1px;
+	border: 1px solid #c0c0c0;
+}
+
+td.t {	background-color:#eeeeee;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 11px;	padding-left:8;	padding-right:8;	padding-top:4;	padding-bottom:4;}td.menu {	background-color:#dddddd;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 11px;	padding-left:8;	padding-right:8;	padding-top:4;	padding-bottom:4;}td.f {	background-color:#ffffff;	text-align:left;	vertical-align:top;	font-size: 11px;}td.h {	background-color:#dddddd;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 11px;        font-weight: bold;	padding-left:8;	padding-right:8;	padding-top:4;	padding-bottom:4;}th {	background-color:#dddddd;	font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 11px;        font-weight: bold;        text-align: center;	padding:8;}td.show {	border: 1px solid #c0c0c0;	padding-left: 6px;	padding-right: 6px;	padding-top: 2px;	padding-bottom: 2px;}input, textarea {	border: 1px solid #c0c0c0;}th.show {
+	background-color: #eeeeee;
+	text-align: center;
+	border: 1px solid #c0c0c0;
+	padding: 6px;
+}table.edit {	border-collapse: collapse;	border-spacing: 0px;	border: none;}th.edit, td.edith {	padding: 8px;	padding-top: 12px;	color: #0080a0;	font-weight: bold;/*	border-bottom: 1px solid #c0c0c0;*/
+	text-align: right;
+}
+
+td.edit {
+	padding: 8px;
+/*	border-bottom: 1px solid #c0c0c0;*/
+}
+
+h2 {
+	font-size: 14px;
+	color: #ff8000;
+	font-weight: bold;
+}
+
+img {
+	border: 0;
+}
+
+a:link.nv,a:visited.nv,a:hover.nv {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:link.nvs,a:visited.nvs,a:hover.nvs {
+	color: #ff0000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nvs {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.nv {
+	font-weight: bold;
+}
+
+#comment{
+	color: #999999;
+	font-weight: normal;
+	font-size: 9px;
+}

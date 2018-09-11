@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * FCKeditor - The text editor for Internet - http://www.fckeditor.net
+ * Copyright (C) 2003-2009 Frederico Caldeira Knabben
+ *
+ * == BEGIN LICENSE ==
+ *
+ * Licensed under the terms of any of the following licenses at your
+ * choice:
+ *
+ *  - GNU General Public License Version 2 or later (the "GPL")
+ *    http://www.gnu.org/licenses/gpl.html
+ *
+ *  - GNU Lesser General Public License Version 2.1 or later (the "LGPL")
+ *    http://www.gnu.org/licenses/lgpl.html
+ *
+ *  - Mozilla Public License Version 1.1 or later (the "MPL")
+ *    http://www.mozilla.org/MPL/MPL-1.1.html
+ *
+ * == END LICENSE ==
+ *
+ * This is the sample style definitions file. It makes the styles combo
+ * completely customizable.
+ *
+ * See FCKConfig.StylesXmlPath in the configuration file.
+-->
+<Styles>
+
+	<!-- Block Styles -->
+
+	<Style name="H1" element="h1" />
+	<Style name="H2" element="h2" />
+	<Style name="H3" element="h3" />
+	<Style name="H4" element="h4" />
+	<Style name="H5" element="h5" />
+	<Style name="H6" element="h6" />
+	<Style name="Параграф" element="p" />
+
+	<!-- Inline Styles -->
+
+	<Style name="Маркер: желтый" element="span">
+		<Style name="background-color" value="Yellow" />
+	</Style>
+	<Style name="Маркер: зеленый" element="span">
+		<Style name="background-color" value="Lime" />
+	</Style>
+
+	<!-- Object Styles -->
+
+	<Style name="Image on Left" element="img">
+		<Attribute name="style" value="padding: 5px; margin-right: 5px" />
+		<Attribute name="border" value="2" />
+		<Attribute name="align" value="left" />
+	</Style>
+	<Style name="Image on Right" element="img">
+		<Attribute name="style" value="padding: 5px; margin-left: 5px" />
+		<Attribute name="border" value="2" />
+		<Attribute name="align" value="right" />
+	</Style>
+</Styles>
