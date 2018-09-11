@@ -1,4 +1,4 @@
-<?	require("incl.php");
+<?	require("adm_incl.php");
 	//---- GENERAL ----
 
 	$title = "Администраторы";
