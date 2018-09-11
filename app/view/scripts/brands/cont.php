@@ -1,0 +1,1 @@
+<?=$this->brand->cont?>

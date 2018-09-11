@@ -1,0 +1,24 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_URI} !^/admin
+RewriteCond %{REQUEST_URI} !^/admin/
+RewriteCond %{REQUEST_URI} !^/fckeditor/
+RewriteCond %{REQUEST_URI} !^/myadmin/
+RewriteCond %{REQUEST_URI} !^/pic/
+RewriteCond %{REQUEST_URI} !^/app/
+RewriteCond %{REQUEST_URI} !^/robots.txt
+RewriteCond %{REQUEST_URI} !^/sitemap.xml
+RewriteCond %{REQUEST_URI} !^/sitemap.html
+RewriteCond %{REQUEST_URI} !^/favicon.ico
+RewriteCond %{REQUEST_URI} !^/google890f336dcd9b5dde.html
+RewriteCond %{REQUEST_URI} !^/yandex_092429e1668d9b8c.html
+RewriteCond %{REQUEST_URI} !^/ecc29d638419.html
+RewriteCond %{REQUEST_URI} !^/googleb6fe9d355cedc4b9.html
+RewriteCond %{REQUEST_URI} !^/partners.xml
+RewriteCond %{REQUEST_URI} !^/convert.php
+RewriteCond %{REQUEST_URI} !^/7262A38E20FBC3747E6B5B107081F80A.txt
+RewriteCond %{REQUEST_URI} !^/sp-push-worker.js
+RewriteCond %{REQUEST_URI} !^/sp-push-manifest.json
+
+RewriteRule ^(.*)$ cms.php
